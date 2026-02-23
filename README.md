@@ -121,6 +121,21 @@ mcpelauncher-client -dg ~/.local/share/mcpelauncher/versions/1.26.1.1
 
 To install a different version, repeat Step 5 with a different APK and version folder name.
 
+
+### Restoring from backup
+If the repo goes down and you need to reinstall the binaries:
+```bash
+shcp ~/mcpelauncher-client.bak /usr/local/bin/mcpelauncher-client
+cp ~/mcpelauncher-extract.bak /usr/local/bin/mcpelauncher-extract
+chmod +x /usr/local/bin/mcpelauncher-client
+chmod +x /usr/local/bin/mcpelauncher-extract
+```
+
+Then use them exactly as normal:
+```bash
+shmcpelauncher-extract ~/Downloads/minecraft.apk ~/.local/share/mcpelauncher/versions/1.26.1.1
+mcpelauncher-client -dg ~/.local/share/mcpelauncher/versions/1.26.1.1
+```
 ---
 
 ## Method 6 — GDK version via ProtonGDK
