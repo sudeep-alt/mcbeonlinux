@@ -18,15 +18,15 @@ If that project disappears, these methods stop working — unless you already ba
 
 ## Overview of Methods
 
-| # | Method | Source | Difficulty | Notes |
-|---|--------|--------|-----------|------|
-| 1 | mcpelauncher | Android | Easy | Legal |
-| 2 | Trinity Launcher | Android | Easy | Better mods management|
-| 3 | Cianova Launcher | Android | Easy | Python GUI |
-| 4 | Iosel Edition | Android | Easy | AppImage fork |
-| 5 | Raw CLI | Android | Medium | Minimal & reliable |
-| 6 | ProtonGDK | Windows PC | Hard | Runs actual PC version |
-| 7 | Windows VM | Windows PC | Easy | Heavy but reliable |
+| # | Method | Source | Difficulty
+|---|--------|--------|-----------
+| 1 | mcpelauncher | Android | Easy
+| 2 | Trinity Launcher | Android | Easy
+| 3 | Cianova Launcher | Android | Easy
+| 4 | Iosel Edition | Android | Easy
+| 5 | Raw CLI | Android | Medium
+| 6 | ProtonGDK | Windows PC | Hard
+| 7 | Windows VM | Windows PC | Easy
 
 ---
 
