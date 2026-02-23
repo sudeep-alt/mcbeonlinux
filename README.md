@@ -20,9 +20,9 @@ If that project disappears, these methods stop working — unless you already ba
 
 | # | Method | Source | Difficulty | Notes |
 |---|--------|--------|-----------|------|
-| 1 | mcpelauncher | Android | Easy | Official & legal |
-| 2 | Trinity Launcher | Android | Easy | Modern GUI + features |
-| 3 | Cianova Launcher | Android | Easy | Python GUI, hackable |
+| 1 | mcpelauncher | Android | Easy | Legal |
+| 2 | Trinity Launcher | Android | Easy | Better mods management|
+| 3 | Cianova Launcher | Android | Easy | Python GUI |
 | 4 | Iosel Edition | Android | Easy | AppImage fork |
 | 5 | Raw CLI | Android | Medium | Minimal & reliable |
 | 6 | ProtonGDK | Windows PC | Hard | Runs actual PC version |
