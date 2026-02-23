@@ -108,14 +108,6 @@ cp /usr/local/bin/mcpelauncher-extract ~/mcpelauncher-extract.bak
 
 Download the **x86_64** APK from [mcpelife.com](https://mcpelife.com). Make sure it's x86_64, not ARM.
 
-Verify before extracting:
-
-```sh
-unzip -l minecraft.apk | grep libminecraftpe
-# should show: lib/x86_64/libminecraftpe.so
-# if you only see lib/arm64-v8a/ — wrong APK
-```
-
 ### Step 5 — Extract and play
 
 ```sh
