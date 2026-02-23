@@ -31,7 +31,6 @@ Well-maintained and formal. Has its own mod/texture pack management on top of th
 - Version management, export/import, shortcuts, Discord Rich Presence
 - Built with C++ and Qt6
 
-APK source: [mcpelife.com](https://mcpelife.com) — download the x86_64 version
 
 [Repo](https://github.com/Trinity-LA/Trinity-Launcher) | [Docs](https://trinitylauncher.vercel.app/) | [Tutorial](https://youtu.be/ZMAamMBm8Go?si=qwZ7xOhtclxPyDw7)
 
