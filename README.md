@@ -121,6 +121,8 @@ mcpelauncher-client -dg ~/.local/share/mcpelauncher/versions/1.26.1.1
 
 To install a different version, repeat Step 5 with a different APK and version folder name.
 
+### NOTE
+`mcpelauncher-client` only works with x86_64 APKs. Such APKs are very hard to find. Cracked x86_64 APKs are available at [mcpelife.com](https://mcpelife.com). But I couldn't find any reliable way to get x86_64 APK for the legal version of MCPE.
 
 ### Restoring from backup
 If the repo goes down and you need to restore the binaries you backed up:
