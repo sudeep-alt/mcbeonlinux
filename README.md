@@ -146,7 +146,8 @@ Minecraft Bedrock has shifted from UWP to GDK on Windows. This method runs the a
 - Lengthy setup — not recommended unless other methods fail
 - No specific repo — combination of multiple tools and workarounds
 
-[Tutorial](https://youtu.be/m76O2cRIEnM?si=YV2dxJpvLTYKtIDh)
+[Video Tutorial](https://youtu.be/m76O2cRIEnM?si=YV2dxJpvLTYKtIDh)
+[Textual Tutorial](https://github.com/inbob1/mcbe-on-linux)
 
 ---
 
