@@ -46,9 +46,9 @@ Requires owning Minecraft on Google Play. It downloads the APK using your accoun
 - ✖ Custom APKs not officially supported  
 - ✔ First launcher to run Bedrock on Linux  
 
-Repo: https://github.com/minecraft-linux/mcpelauncher-manifest  
-Docs: https://mcpelauncher.readthedocs.io/en/latest/getting_started/index.html  
-Tutorial: https://youtu.be/rg_OH-nmoeQ  
+[Repo](https://github.com/minecraft-linux/mcpelauncher-manifest)
+[Docs](https://mcpelauncher.readthedocs.io/en/latest/getting_started/index.html)
+[Tutorial](https://youtu.be/rg_OH-nmoeQ)
 
 ---
 
@@ -65,9 +65,9 @@ A polished, actively maintained launcher with extended features.
 - Discord Rich Presence
 - Built with C++ & Qt6
 
-Repo: https://github.com/Trinity-LA/Trinity-Launcher  
-Docs: https://trinitylauncher.vercel.app/  
-Tutorial: https://youtu.be/ZMAamMBm8Go  
+[Repo](https://github.com/Trinity-LA/Trinity-Launcher)
+[Docs](https://trinitylauncher.vercel.app/) 
+[Tutorial](https://youtu.be/ZMAamMBm8Go)
 
 ---
 
@@ -83,8 +83,8 @@ Community-made launcher with a Python GUI using **customtkinter**.
 - Nvidia Prime, GameMode & Zink support
 - Dependency checker included
 
-Repo & Docs: https://github.com/PlaGaPlusDev/CianovaLauncher-mcpelauncher  
-Tutorial: https://youtu.be/-tl4ZSJ3DSE  
+[Repo & Docs](https://github.com/PlaGaPlusDev/CianovaLauncher-mcpelauncher)
+[Tutorial](https://youtu.be/-tl4ZSJ3DSE)
 
 ---
 
@@ -99,8 +99,8 @@ A modified **AppImage** fork of mcpelauncher.
 - Custom APK configuration support
 - Developed by a contributor associated with Trinity
 
-Repo & Docs: https://github.com/IoselDev/Minecraft-Bedrock-Linux-Iosel-Edition  
-Tutorial: https://youtu.be/BAZqN_NhIj4  
+[Repo & Docs](https://github.com/IoselDev/Minecraft-Bedrock-Linux-Iosel-Edition)
+[Tutorial](https://youtu.be/BAZqN_NhIj4)
 
 ---
 
