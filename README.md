@@ -1,0 +1,162 @@
+# Minecraft Bedrock on Linux
+
+A complete guide to every known method.
+
+**Important:** All Android-based methods (1–5) depend on `mcpelauncher-client` and `mcpelauncher-extract` from the mcpelauncher-manifest project. If that project dies, they all die — unless you have the binaries backed up.
+
+---
+
+## Method 1 — mcpelauncher (Official)
+
+The original. Has been the go-to for years. Requires owning Minecraft on Google Play — downloads the APK automatically through your account.
+
+> ⚠ The maintainer (ChristopherHX) stated on the official Discord:
+> *"Yes we are sitting on top a cave full of tnt, you have no long term update warranties. Update delays / stops could happen at any point of time, since the DRM has been enabled."*
+
+- Legal: Yes — uses your own purchased copy
+- APK source: Downloads automatically via Google Play login
+- Custom APKs: Not officially supported
+- First ever launcher to run Bedrock on Linux
+
+[Repo](https://github.com/minecraft-linux/mcpelauncher-manifest) | [Docs](https://mcpelauncher.readthedocs.io/en/latest/getting_started/index.html) | [Tutorial](https://youtu.be/XN3ugEdyEvM?si=wzSMUBYj38MMyWNH)
+
+---
+
+## Method 2 — Trinity Launcher
+
+Well-maintained and formal. Has its own mod/texture pack management on top of the standard mcpelauncher utilities.
+
+- Uses `mcpelauncher-client` and `mcpelauncher-extract`
+- Runs custom APKs
+- Version management, export/import, shortcuts, Discord Rich Presence
+- Built with C++ and Qt6
+
+APK source: [mcpelife.com](https://mcpelife.com) — download the x86_64 version
+
+[Repo](https://github.com/Trinity-LA/Trinity-Launcher) | [Docs](https://trinitylauncher.vercel.app/) | [Tutorial](https://youtu.be/ZMAamMBm8Go?si=qwZ7xOhtclxPyDw7)
+
+---
+
+## Method 3 — Cianova Launcher
+
+Made by a user in the Trinity Launcher Discord. Python-based GUI using customtkinter.
+
+- Uses `mcpelauncher-client` and `mcpelauncher-extract`
+- Runs custom APKs
+- Built with Python — easier to read and modify than Trinity
+- Supports Nvidia Prime, GameMode, Zink, dependency checker
+
+[Repo + Docs](https://github.com/PlaGaPlusDev/CianovaLauncher-mcpelauncher) | [Tutorial](https://youtu.be/-tl4ZSJ3DSE?si=-xfBd_xV1Of5XfHI)
+
+---
+
+## Method 4 — Iosel Edition
+
+A modified AppImage fork of mcpelauncher. Claims to not depend on Flatpak runtime. Made by a contributor associated with the Trinity project.
+
+- Can configure custom APKs
+- Standalone — no Flatpak runtime required
+
+[Repo + Docs](https://github.com/IoselDev/Minecraft-Bedrock-Linux-Iosel-Edition) | [Tutorial](https://youtu.be/BAZqN_NhIj4?si=eEuOY4TvDeE_VpWQ)
+
+---
+
+## Method 5 — Raw CLI (recommended)
+
+Skip the launchers entirely. Use mcpelauncher's utilities directly from the terminal. This is what every launcher above does under the hood — two commands and you're playing.
+
+### Step 1 — Install mcpelauncher-client
+
+```sh
+curl -fsSL https://minecraft-linux.github.io/pkg/deb/pubkey.gpg \
+  | gpg --dearmor \
+  | sudo tee /etc/apt/trusted.gpg.d/mcpelauncher.gpg > /dev/null
+
+echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/mcpelauncher.gpg] \
+  https://minecraft-linux.github.io/pkg/deb noble main" \
+  | sudo tee /etc/apt/sources.list.d/mcpelauncher.list
+
+sudo apt update
+sudo apt install mcpelauncher-manifest
+```
+
+### Step 2 — Build and install mcpelauncher-extract
+
+Not in the repo as a separate package — compile it yourself (takes under a minute):
+
+```sh
+sudo apt install git cmake clang libzip-dev
+
+git clone https://github.com/minecraft-linux/mcpelauncher-extract.git
+cd mcpelauncher-extract
+mkdir build && cd build
+cmake ..
+make -j$(nproc)
+sudo make install
+```
+
+### Step 3 — Backup the binaries
+
+Both are GPL licensed — you can copy and redistribute freely. Back them up in case the repo goes down:
+
+```sh
+cp /usr/bin/mcpelauncher-client ~/mcpelauncher-client.bak
+cp /usr/local/bin/mcpelauncher-extract ~/mcpelauncher-extract.bak
+```
+
+### Step 4 — Get a Minecraft APK
+
+Download the **x86_64** APK from [mcpelife.com](https://mcpelife.com). Make sure it's x86_64, not ARM.
+
+Verify before extracting:
+
+```sh
+unzip -l minecraft.apk | grep libminecraftpe
+# should show: lib/x86_64/libminecraftpe.so
+# if you only see lib/arm64-v8a/ — wrong APK
+```
+
+### Step 5 — Extract and play
+
+```sh
+# extract (once per version)
+mcpelauncher-extract ~/Downloads/minecraft-1.26.1.1-x86_64.apk \
+  ~/.local/share/mcpelauncher/versions/1.26.1.1
+
+# play
+mcpelauncher-client -dg ~/.local/share/mcpelauncher/versions/1.26.1.1
+```
+
+To install a different version, repeat Step 5 with a different APK and version folder name.
+
+---
+
+## Method 6 — GDK version via ProtonGDK
+
+Minecraft Bedrock has shifted from UWP to GDK on Windows. This method runs the actual PC GDK version on Linux using ProtonGDK and some proxy workarounds.
+
+- Runs the actual Windows PC version, not Android
+- Lengthy setup — not recommended unless other methods fail
+- No specific repo — combination of multiple tools and workarounds
+
+[Tutorial](https://youtu.be/m76O2cRIEnM?si=YV2dxJpvLTYKtIDh)
+
+---
+
+## Method 7 — Windows VM
+
+Run Windows in a virtual machine and play Minecraft Bedrock normally inside it. Last resort — works but has overhead and requires a Windows license.
+
+---
+
+## Outdated Methods
+
+### Waydroid
+
+Ran a full Android environment and played Minecraft like on a phone. Stopped working in newer versions — game gets stuck at the loading screen.
+
+### CCMC Launcher by Crow_Rei34
+
+Worked similarly to Trinity — extracted and ran custom APKs. Repository has since been deleted or privated. Believed to have been discontinued when Trinity was introduced, as both share a developer (JavierC).
+
+Historical tutorials (Portugese): [1](https://youtu.be/4K1X8PafWf0?si=jZe4X5xsA9nplT5h) | [2](https://youtu.be/VfVwqMcKhy0?si=_C70rhEyabASEKgb) | [3](https://youtu.be/sYvpEpwin6k?si=sD631OfATfYwzbH1)
