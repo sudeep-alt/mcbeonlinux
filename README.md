@@ -18,7 +18,7 @@ The original. Has been the go-to for years. Requires owning Minecraft on Google 
 - Custom APKs: Not officially supported
 - First ever launcher to run Bedrock on Linux
 
-[Repo](https://github.com/minecraft-linux/mcpelauncher-manifest) | [Docs](https://mcpelauncher.readthedocs.io/en/latest/getting_started/index.html) | [Tutorial](https://youtu.be/XN3ugEdyEvM?si=oYM4ypUBQ0QEDAmr)
+[Repo](https://github.com/minecraft-linux/mcpelauncher-manifest) | [Docs](https://mcpelauncher.readthedocs.io/en/latest/getting_started/index.html) | [Tutorial](https://youtu.be/rg_OH-nmoeQ?si=RNMzFO5ml4G2WJbF)
 
 ---
 
