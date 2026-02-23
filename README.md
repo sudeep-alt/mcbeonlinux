@@ -6,7 +6,7 @@ A complete guide to every known method.
 
 ---
 
-## Method 1 — mcpelauncher (Official)
+## Method 1 — mcpelauncher
 
 The original. Has been the go-to for years. Requires owning Minecraft on Google Play — downloads the APK automatically through your account.
 
