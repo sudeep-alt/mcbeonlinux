@@ -1,62 +1,106 @@
 # Minecraft Bedrock on Linux
 
-A complete guide to every known method.
+The complete guide to every known way to run **Minecraft Bedrock Edition** on Linux.
 
-**Important:** All Android-based methods (1–5) depend on `mcpelauncher-client` and `mcpelauncher-extract` from the mcpelauncher-manifest project. If that project dies, they all die — unless you have the binaries backed up.
+---
+
+## ⚠ Critical Dependency Notice
+
+All Android-based methods (Methods 1–5) rely on:
+
+- `mcpelauncher-client`
+- `mcpelauncher-extract`
+- the **mcpelauncher-manifest** project
+
+If that project disappears, these methods stop working — unless you already backed up the binaries.
+
+---
+
+## Overview of Methods
+
+| # | Method | Source | Difficulty | Notes |
+|---|--------|--------|-----------|------|
+| 1 | mcpelauncher | Android | Easy | Official & legal |
+| 2 | Trinity Launcher | Android | Easy | Modern GUI + features |
+| 3 | Cianova Launcher | Android | Easy | Python GUI, hackable |
+| 4 | Iosel Edition | Android | Easy | AppImage fork |
+| 5 | Raw CLI | Android | Medium | Minimal & reliable |
+| 6 | ProtonGDK | Windows PC | Hard | Runs actual PC version |
+| 7 | Windows VM | Windows PC | Easy | Heavy but reliable |
 
 ---
 
 ## Method 1 — mcpelauncher
 
-The original. Has been the go-to for years. Requires owning Minecraft on Google Play — downloads the APK automatically through your account.
+The original launcher and long-standing standard.
 
-> ⚠ The maintainer (ChristopherHX) stated on the official Discord:
+Requires owning Minecraft on Google Play. It downloads the APK using your account.
+
+> ⚠ Maintainer ChristopherHX stated:
 > *"Yes we are sitting on top a cave full of tnt, you have no long term update warranties. Update delays / stops could happen at any point of time, since the DRM has been enabled."*
 
-- Legal: Yes — uses your own purchased copy
-- APK source: Downloads automatically via Google Play login
-- Custom APKs: Not officially supported
-- First ever launcher to run Bedrock on Linux
+**Key Points**
 
-[Repo](https://github.com/minecraft-linux/mcpelauncher-manifest) | [Docs](https://mcpelauncher.readthedocs.io/en/latest/getting_started/index.html) | [Tutorial](https://youtu.be/rg_OH-nmoeQ?si=RNMzFO5ml4G2WJbF)
+- ✔ Legal — uses your purchased copy  
+- ✔ Automatic APK download via Google login  
+- ✖ Custom APKs not officially supported  
+- ✔ First launcher to run Bedrock on Linux  
+
+Repo: https://github.com/minecraft-linux/mcpelauncher-manifest  
+Docs: https://mcpelauncher.readthedocs.io/en/latest/getting_started/index.html  
+Tutorial: https://youtu.be/rg_OH-nmoeQ  
 
 ---
 
 ## Method 2 — Trinity Launcher
 
-Well-maintained and formal. Has its own mod/texture pack management on top of the standard mcpelauncher utilities.
+A polished, actively maintained launcher with extended features.
 
-- Uses `mcpelauncher-client` and `mcpelauncher-extract`
-- Runs custom APKs
-- Version management, export/import, shortcuts, Discord Rich Presence
-- Built with C++ and Qt6
+**Features**
 
+- Uses `mcpelauncher-client` & `mcpelauncher-extract`
+- Supports custom APKs
+- Version management & export/import
+- Mod & texture pack management
+- Discord Rich Presence
+- Built with C++ & Qt6
 
-[Repo](https://github.com/Trinity-LA/Trinity-Launcher) | [Docs](https://trinitylauncher.vercel.app/) | [Tutorial](https://youtu.be/ZMAamMBm8Go?si=qwZ7xOhtclxPyDw7)
+Repo: https://github.com/Trinity-LA/Trinity-Launcher  
+Docs: https://trinitylauncher.vercel.app/  
+Tutorial: https://youtu.be/ZMAamMBm8Go  
 
 ---
 
 ## Method 3 — Cianova Launcher
 
-Made by a user in the Trinity Launcher Discord. Python-based GUI using customtkinter.
+Community-made launcher with a Python GUI using **customtkinter**.
 
-- Uses `mcpelauncher-client` and `mcpelauncher-extract`
-- Runs custom APKs
-- Built with Python — easier to read and modify than Trinity
-- Supports Nvidia Prime, GameMode, Zink, dependency checker
+**Highlights**
 
-[Repo + Docs](https://github.com/PlaGaPlusDev/CianovaLauncher-mcpelauncher) | [Tutorial](https://youtu.be/-tl4ZSJ3DSE?si=-xfBd_xV1Of5XfHI)
+- Uses mcpelauncher utilities
+- Supports custom APKs
+- Easier to read & modify than Trinity
+- Nvidia Prime, GameMode & Zink support
+- Dependency checker included
+
+Repo & Docs: https://github.com/PlaGaPlusDev/CianovaLauncher-mcpelauncher  
+Tutorial: https://youtu.be/-tl4ZSJ3DSE  
 
 ---
 
 ## Method 4 — Iosel Edition
 
-A modified AppImage fork of mcpelauncher. Claims to not depend on Flatpak runtime. Made by a contributor associated with the Trinity project.
+A modified **AppImage** fork of mcpelauncher.
 
-- Can configure custom APKs
-- Standalone — no Flatpak runtime required
+**Highlights**
 
-[Repo + Docs](https://github.com/IoselDev/Minecraft-Bedrock-Linux-Iosel-Edition) | [Tutorial](https://youtu.be/BAZqN_NhIj4?si=eEuOY4TvDeE_VpWQ)
+- Standalone AppImage
+- No Flatpak runtime required
+- Custom APK configuration support
+- Developed by a contributor associated with Trinity
+
+Repo & Docs: https://github.com/IoselDev/Minecraft-Bedrock-Linux-Iosel-Edition  
+Tutorial: https://youtu.be/BAZqN_NhIj4  
 
 ---
 
