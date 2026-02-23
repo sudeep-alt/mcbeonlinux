@@ -4,7 +4,7 @@ The complete guide to every known way to run **Minecraft Bedrock Edition** on Li
 
 ---
 
-## ⚠ Critical Dependency Notice
+## ⚠ Dependency
 
 All Android-based methods (Methods 1–5) rely on:
 
