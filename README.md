@@ -126,7 +126,7 @@ To install a different version, repeat Step 5 with a different APK and version f
 ### Restoring from backup
 If the repo goes down and you need to restore the binaries you backed up:
 ```bash
-cp ~/mcpelauncher-extract /usr/local/binmcpelauncher-extract 
+cp ~/mcpelauncher-extract /usr/local/bin/mcpelauncher-extract 
 cp ~/mcpelauncher-client /usr/bin/mcpelauncher-client 
 chmod +x /usr/bin/mcpelauncher-client 
 chmod +x /usr/local/binmcpelauncher-extract 
