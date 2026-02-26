@@ -128,8 +128,8 @@ If the repo goes down and you need to restore the binaries you backed up:
 ```bash
 cp ~/usr/local/bin/mcpelauncher-extract ~/mcpelauncher-extract
 cp ~/usr/bin/mcpelauncher-client ~/mcpelauncher-client
-chmod +x /usr/local/bin/mcpelauncher-client
-chmod +x /usr/local/bin/mcpelauncher-extract
+chmod +x ~/mcpelauncher-client
+chmod +x ~/mcpelauncher-extract
 ```
 
 Then use them exactly as normal:
