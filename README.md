@@ -111,8 +111,7 @@ Download the **x86_64** APK from [mcpelife.com](https://mcpelife.com). Make sure
 
 ```sh
 # extract (once per version)
-mcpelauncher-extract ~/Downloads/minecraft-x86_64.apk \
-  ~/.local/share/mcpelauncher/versions/{VESRION}
+mcpelauncher-extract ~/Downloads/minecraft-x86_64.apk ~/.local/share/mcpelauncher/versions/{VESRION}
 
 # play
 mcpelauncher-client -dg ~/.local/share/mcpelauncher/versions/{VERSION}
