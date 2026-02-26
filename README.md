@@ -99,8 +99,8 @@ sudo make install
 Both are GPL licensed — you can copy and redistribute freely. Back them up in case the repo goes down:
 
 ```sh
-cp /usr/bin/mcpelauncher-client ~/mcpelauncher-client.bak
-cp /usr/local/bin/mcpelauncher-extract ~/mcpelauncher-extract.bak
+cp /usr/bin/mcpelauncher-client ~/mcpelauncher-client
+cp /usr/local/bin/mcpelauncher-extract ~/mcpelauncher-extract
 ```
 
 ### Step 4 — Get a Minecraft APK
