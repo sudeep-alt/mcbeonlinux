@@ -1,5 +1,7 @@
 # Minecraft Bedrock on Linux
 
+@sudeep-alt
+
 A complete guide to every known method.
 
 **Important:** All Android-based methods (1–5) depend on `mcpelauncher-client` and `mcpelauncher-extract` from the mcpelauncher-manifest project. If that project dies, they all die — unless you have the binaries backed up.
