@@ -34,7 +34,7 @@ The original launcher and the foundation of nearly every Android-based Bedrock l
 # Method 2: Trinity Launcher
 
 > [!WARNING]
-> The highest supported Minecraft version on **x86_64** systems is **1.26.31**.
+> The highest supported Minecraft version on **x86_64** systems with this launcher is **1.26.31**.
 
 A modern launcher built on top of the standard mcpelauncher utilities. It adds version management together with integrated mod and texture pack support.
 
